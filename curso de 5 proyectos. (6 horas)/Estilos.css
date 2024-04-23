@@ -9,20 +9,29 @@ main {
   margin: 15px 0;
 }
 
+h2, img, .texto, p {
+  border-radius: 15px;
+}
+
 main h2 {
   text-align: center;
-  border-radius: 15px;
   background: #123640;
-  box-shadow: 0px 0px 8px 3px #123640;
+  box-shadow: 0 0 8px 3px #123640;
   padding: 30px;
 }
 
-main .content img {
+main img {
   margin: 10px;
-  border-radius: 15px;
-  width: 200px;
+  box-shadow: 0 -2px 5px 9px #123640;
+}
+
+main .content, main .content_dos {
+  margin: 0 auto;
+}
+
+main .content img {
   float: left;
-  box-shadow: 0px -2px 5px 9px #123640;
+  width: 200px;
 }
 
 main .content .texto {
@@ -32,68 +41,61 @@ main .content .texto {
 
 main .content_dos img {
   display: block;
-  margin: 0 auto;
   width: 300px; 
+}
+
+main p {
+  font-size: 18px;
+}
+
+#unico {
+  float: left;
+  margin: 30px;
+  width: 250px; 
 }
 
 @media (min-width: 981px) {
   main {
     margin: 0 25px;
-   
   }
+
   main .content {
-    margin: 0 auto;
     height: 350px; 
     width: 85%;
-  } 
-  main .content .texto {
+  }
+
+  main .content .texto, main p {
     font-size: 30px;
+  }
+
+  main .content .texto {
     padding-top: 5%;
   }
-  main p{
-    font-size: 18px;
-  }
-  #unico {
-    float: left;
-    margin: 30px;
-    width: 250px; 
-  }
-  
 }
 
 @media (max-width: 980px) {
- 
-    main {
+  main {
     margin: 0 25px;
   }
-  
+
   main .content {
-    margin: 0 auto;
     height: 500px; 
     width: 85%;
   }
-  
+
   main .content .texto {
     font-size: 30px;
     padding-top: 5%;
   }
 
-  main p{
-    font-size: 18px;
-  }
-  
-  main .content img {
+  main .content img, main .content_dos img {
     width: 250px; 
-    padding-top:5%;
+    padding-top: 5%;
     margin: 0 auto;
   }
-  main .content_dos img{
+
+  main .content_dos img {
     width: 550px;
     height: 350px;
-  }
-  #unico {
-    float: left;
-    margin: 30px;
-    width: 250px; 
   }
 }
