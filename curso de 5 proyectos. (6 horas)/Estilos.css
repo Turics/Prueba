@@ -72,8 +72,12 @@ main .content_dos img {
   main .content {
     height: 500px;
   }
+  main {
+    margin: 20px;
+  } 
 
   main .content .texto {
+    font-size: 18px;
     padding-top: 5%;
   }
 
