@@ -9,24 +9,23 @@ main {
   margin: 15px 0;
 }
 
-h2, img, .texto, p {
-  border-radius: 15px;
-}
-
 main h2 {
   text-align: center;
   background: #123640;
   box-shadow: 0 0 8px 3px #123640;
   padding: 30px;
+  border-radius: 15px;
 }
 
 main img {
   margin: 10px;
   box-shadow: 0 -2px 5px 9px #123640;
+  border-radius: 15px;
 }
 
 main .content, main .content_dos {
   margin: 0 auto;
+  width: 85%;
 }
 
 main .content img {
@@ -34,18 +33,15 @@ main .content img {
   width: 200px;
 }
 
-main .content .texto {
-  font-size: 25px;
-  width: 90%; 
+main .content .texto, main p {
+  font-size: 18px;
+  border-radius: 15px;
 }
 
 main .content_dos img {
   display: block;
+  margin: 0 auto;
   width: 300px; 
-}
-
-main p {
-  font-size: 18px;
 }
 
 #unico {
@@ -60,8 +56,7 @@ main p {
   }
 
   main .content {
-    height: 350px; 
-    width: 85%;
+    height: 350px;
   }
 
   main .content .texto, main p {
@@ -74,24 +69,17 @@ main p {
 }
 
 @media (max-width: 980px) {
-  main {
-    margin: 0 25px;
-  }
-
   main .content {
-    height: 500px; 
-    width: 85%;
+    height: 500px;
   }
 
   main .content .texto {
-    font-size: 30px;
     padding-top: 5%;
   }
 
   main .content img, main .content_dos img {
-    width: 250px; 
+    width: 250px;
     padding-top: 5%;
-    margin: 0 auto;
   }
 
   main .content_dos img {
